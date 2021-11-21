@@ -1,12 +1,12 @@
 # homework-eight
 
-Junglecook CRUD application
+Live Link: [Junglecook](https://jrk-junglecook.web.app)
 
 # About the application:
 
 ## Basics
 
-The jungle book is a fully responsive CRUD web application. It uses a model view controller to control user inputs and data of the application and a firebase for login/logout functionality. Each page is loaded dynamically by injecting the view using the URL. The page styling was done using Sass and media queries to make each page responsive in design for tablet and mobile.
+Junglecook is a fully responsive CRUD web application. It uses a model view controller to control user inputs and data of the application and a firebase for login/logout functionality. Each page is loaded dynamically by injecting the view using the URL. The page styling was done using Sass and media queries to make each page responsive in design for tablet and mobile.
 
 ## Login Functionality
 
