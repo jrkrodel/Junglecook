@@ -1,0 +1,64 @@
+{
+  "PUBLIC_RECIPES": [
+    {
+      "id": "1",
+      "name": "Supreme Pizza",
+      "image": "url(images/recipe-pizza.jpg)",
+      "description": "Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!",
+      "time": "1h 24min",
+      "size": "4 servings",
+      "instructions": [
+        "Bake Dough",
+        "Put dough in over",
+        "Cook Dough",
+        "Enjoy"
+      ],
+      "ingredients": ["Pizza dough", "tomato", "onion", "green pepper"]
+    },
+    {
+      "id": "2",
+      "name": "Classic Burger",
+      "image": "url(images/recipe-burger.jpg)",
+      "description": "Sink you teath into a delicious restaurant-style, hambuger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it.",
+      "time": "30min",
+      "size": "4 servings",
+      "instructions": [
+        "Defrost burger patty",
+        "Grill Burger patty till medium-well",
+        "top with toppings"
+      ],
+      "ingredients": ["Ground Beef Patty", "Hambuger Bun", "Onion", "Cheese"]
+    },
+    {
+      "id": "3",
+      "name": "Chicken Biryani",
+      "image": "url(images/recipe-pilaf.jpg)",
+      "description": "Chicken Biryani is a bold and flavorful Indian dish with crazy tender bites of chicken with bell peppers in a deliciously spiced and fragrant rice.",
+      "time": "1h 15min",
+      "size": "6 servings",
+      "instructions": [
+        "Defrost Chick breast",
+        "Marinate chicken for 25 minutes",
+        "Grill chicken until fully cooked",
+        "prepare rice and mix"
+      ],
+      "ingredients": ["Chicken", "Rice", "Green onion"]
+    },
+    {
+      "id": "4",
+      "name": "Ch. Chow Mein",
+      "image": "url(images/recipe-chowmein.jpg)",
+      "description": "A great Chow Mein comes down to the sauce - it takes more than just soy sauce and sugar! Jam packed with a surprsing amount of hidden vegetables, customize this Chicken Chow Mein recipe using your protien of choice!",
+      "time": "20min",
+      "size": "4 servings",
+      "instructions": [
+        "Prepare sauce",
+        "defrost chicken",
+        "simmer in skillet together",
+        "top with spices"
+      ],
+      "ingredients": ["Chicken", "Chow Mein Sauce", "Spices"]
+    }
+  ],
+  "USER_RECIPES": []
+}

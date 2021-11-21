@@ -1,0 +1,119 @@
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 92, 84, 0.6),
+      rgba(242, 92, 84, 0.6)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .circle-holder {
+    width: 550px;
+    height: 500px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    .little-circle {
+      width: 150px;
+      height: 150px;
+      background-color: #fcbcb8;
+      border-radius: 100px;
+      position: absolute;
+      left: 380px;
+      top: 35px;
+      z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 10px 6px #00000029;
+      p {
+        font-family: lato-italic;
+        font-size: 10px;
+        width: 106px;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+    }
+
+    .big-circle {
+      width: 350px;
+      height: 350px;
+      background-color: #ffd972;
+      border-radius: 350px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0px 10px 6px #00000029;
+
+      h1 {
+        width: 163px;
+        font-family: caveat;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 2.4px;
+      }
+      p {
+        width: 162px;
+        letter-spacing: 1.3px;
+        font-family: lato;
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    .circle-holder {
+      .little-circle {
+        left: 285px;
+        top: -20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home {
+    .circle-holder {
+      .big-circle {
+        height: 240px;
+        width: 240px;
+        border-radius: 300px;
+        h1 {
+          font-size: 17px;
+        }
+        p {
+          font-size: 9px;
+          width: 122px;
+        }
+      }
+      .little-circle {
+        height: 120px;
+        width: 120px;
+        border-radius: 120px;
+        left: 275px;
+        top: 58px;
+        p {
+          font-size: 8px;
+          width: 83px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+<div class="edit-recipe">
+  <div class="content">
+    <h1 id="editing-user"></h1>
+    <form id="recipe-info" class="form-recipe">
+      <div class="main-info">
+        <label for="image">Choose an image</label>
+        <div class="select-custom">
+          <select class="form-recipe-input" name="image" id="image">
+            <option value="url(images/recipe-default.jpg)">Default</option>
+            <option value="url(images/recipe-burger.jpg)">Burger</option>
+            <option value="url(images/recipe-chowmein.jpg)">ChowMein</option>
+            <option value="url(images/recipe-pilaf.jpg)">Rice Pilaf</option>
+            <option value="url(images/recipe-pizza.jpg)">Pizza</option>
+          </select>
+          <span class="button button-arrow custom-arrow">Select image</span>
+        </div>
+        <input
+          id="name"
+          name="name"
+          class="form-recipe-input"
+          placeholder="Add Recipe Name"
+        />
+        <input
+          id="description"
+          name="description"
+          class="form-recipe-input"
+          placeholder="Recipe Description"
+        />
+        <input
+          id="time"
+          name="time"
+          class="form-recipe-input"
+          placeholder="Recipe Total Time"
+        />
+        <input
+          id="size"
+          name="size"
+          class="form-recipe-input"
+          placeholder="Recipe Serving Size"
+        />
+      </div>
+      <div class="ingredients">
+        <h2>Edit Ingredients</h2>
+
+        <div class="add-item" onclick="addIngredient()">+</div>
+        <div
+          id="delete-ingredients"
+          onclick="deleteIngredient()"
+          class="delete-item"
+        >
+          -
+        </div>
+      </div>
+      <div class="instructions">
+        <h2>Edit Instructions</h2>
+
+        <div class="add-item" onclick="addInstruction()">+</div>
+        <div
+          id="delete-instruction"
+          onclick="deleteInstruction()"
+          class="delete-item"
+        >
+          -
+        </div>
+      </div>
+      <p onclick="submitEdits()" class="button button-recipe-submit">
+        Submit Changes
+      </p>
+      <a id="cancel" href="#/your-recipes" class="button button-recipe-submit">
+        Cancel
+      </a>
+    </form>
+  </div>
+</div>

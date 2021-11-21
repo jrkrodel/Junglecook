@@ -1,0 +1,140 @@
+.view-recipe {
+  width: 100%;
+  min-height: 100vh;
+
+  .content {
+    display: flex;
+    margin: 160px auto 160px auto;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 78%;
+    .main {
+      width: 100%;
+      height: 100%;
+      margin-top: 50px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      .image-holder {
+        min-width: 45%;
+        height: 420px;
+        margin-right: 45px;
+        // background-image: url(../images/recipe-pizza.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .title {
+        width: 5%;
+        height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: -45px;
+
+        h1 {
+          transform: rotate(-90deg);
+          min-width: 200px;
+          font-family: lato-black;
+          font-size: 25px;
+          margin: 0;
+        }
+      }
+
+      .info {
+        min-width: 45%;
+        min-height: 420px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+
+        h1 {
+          font-family: lato-black;
+          font-size: 25px;
+          font-weight: normal;
+          margin-bottom: 20px;
+        }
+        h2 {
+          font-family: lato-black;
+          font-size: 20px;
+          font-weight: normal;
+          margin-bottom: 20px;
+        }
+        p {
+          font-family: caveat;
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .ingredients,
+    .instructions {
+      min-width: 100%;
+      min-height: 200px;
+      margin-top: 50px;
+
+      h1 {
+        font-family: lato-black;
+        font-size: 25px;
+      }
+      p {
+        font-family: caveat;
+        font-size: 20px;
+      }
+      .button {
+        border: none;
+        width: 150px;
+        height: 40px;
+        margin-top: 60px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .view-recipe {
+    .content {
+      width: 65%;
+      .main {
+        flex-direction: column;
+        align-items: flex-start;
+        .title {
+          left: -35px;
+        }
+        .image-holder {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .view-recipe {
+    .content {
+      width: 100%;
+      .main {
+        .image-holder {
+          width: 90%;
+          margin-left: 10%;
+          height: 200px;
+        }
+        .title {
+          top: -140px;
+          left: -5px;
+          h1 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.edit-recipe {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .content {
+    width: 80%;
+    padding-top: 200px;
+    margin-bottom: 150px;
+    min-height: 100%;
+    h1 {
+      font-family: caveat;
+      font-weight: normal;
+      margin-bottom: 80px;
+    }
+    .form-recipe {
+      width: 100%;
+      height: 100%;
+      .main-info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: relative;
+        label {
+          font-family: lato;
+          font-weight: normal;
+          font-size: 12px;
+          position: absolute;
+        }
+        .select-custom {
+          width: 100%;
+          select {
+            height: 60px;
+            padding-top: 30px;
+          }
+          .custom-arrow {
+            position: absolute;
+            top: 0px;
+            right: 0;
+            pointer-events: none;
+          }
+        }
+      }
+      .ingredients {
+        position: relative;
+        h2 {
+          font-size: 16px;
+          margin-top: 20px;
+          margin-bottom: 33px;
+          font-family: lato-black;
+        }
+      }
+
+      .instructions {
+        margin-bottom: 50px;
+        position: relative;
+        h2 {
+          font-size: 16px;
+          margin-top: 20px;
+          margin-bottom: 33px;
+          font-family: lato-black;
+        }
+      }
+      .form-recipe-input {
+        width: 100%;
+        padding-bottom: 3px;
+        margin-bottom: 80px;
+        background-color: transparent;
+        border: none;
+        border-bottom: black solid 3px;
+        color: black;
+        font-family: lato;
+        outline: none;
+        letter-spacing: 1.2px;
+      }
+      .form-recipe-input::placeholder {
+        color: black;
+      }
+      .add-item {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        bottom: 90px;
+        border-radius: 15px;
+        background-color: #efa7a7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+      }
+      .delete-item {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 40px;
+        bottom: 90px;
+        border-radius: 15px;
+        background-color: #efa7a7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+      }
+      .button-recipe-submit {
+        margin: 0 auto 25px auto;
+        background-color: #efa7a7;
+        min-width: 40%;
+        border: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .edit-recipe {
+    .content {
+      .form-recipe {
+        .button-recipe-submit {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.login {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffd972;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .login-content {
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .login-form-container {
+      min-width: 15%;
+      height: 70%;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    .signup-form-container {
+      min-width: 20%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    .form {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      flex-direction: column;
+      height: 100%;
+      h1 {
+        font-family: lato-black;
+        font-size: 30px;
+        margin-bottom: 50px;
+        letter-spacing: 3px;
+      }
+      p {
+        font-family: lato-italic;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+      }
+      .form-input {
+        width: 100%;
+        padding-bottom: 3px;
+        background-color: transparent;
+        border: none;
+        border-bottom: black solid 3px;
+        color: black;
+        font-family: lato;
+        outline: none;
+        letter-spacing: 1.2px;
+      }
+      .form-input::placeholder {
+        color: black;
+      }
+      .form-button {
+        width: 100%;
+        transition: ease all 0.5s;
+        cursor: pointer;
+      }
+      .form-button:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .login-content {
+    flex-direction: column;
+    padding-top: 120px;
+  }
+  .login-form-container {
+    margin-top: 70px;
+  }
+  .login-form-container {
+    width: 40%;
+    margin-bottom: 100px;
+  }
+  .signup-form-container {
+    width: 40%;
+    margin-bottom: 160px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .login-form-container,
+  .signup-form-container {
+    width: 70%;
+  }
+}

@@ -1,0 +1,54 @@
+.modal {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  display: none;
+}
+
+.bg-click {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.callout {
+  width: 30%;
+  height: 300px;
+  min-width: 250px;
+  position: relative;
+  border-radius: 50px;
+  background-color: #fcfcfc;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-family: lato;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2.4px;
+  }
+  a {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .callout {
+    h1 {
+      font-size: 24px;
+    }
+    a {
+      width: 200px;
+      font-size: 20px;
+    }
+  }
+}

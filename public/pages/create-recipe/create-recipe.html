@@ -1,0 +1,93 @@
+<div class="create-recipe">
+  <div class="content">
+    <h1 id="creating-user"></h1>
+    <form id="main" class="form-recipe">
+      <div class="main-info">
+        <label for="image">Choose an image</label>
+        <div class="select-custom">
+          <select class="form-recipe-input" name="image" id="image">
+            <option value="url(images/recipe-default.jpg)">Default</option>
+            <option value="url(images/recipe-burger.jpg)">Burger</option>
+            <option value="url(images/recipe-chowmein.jpg)">ChowMein</option>
+            <option value="url(images/recipe-pilaf.jpg)">Rice Pilaf</option>
+            <option value="url(images/recipe-pizza.jpg)">Pizza</option>
+          </select>
+          <span class="button button-arrow custom-arrow">Select image</span>
+        </div>
+        <input
+          id="name"
+          name="name"
+          class="form-recipe-input"
+          placeholder="Add Recipe Name"
+        />
+        <input
+          id="description"
+          name="description"
+          class="form-recipe-input"
+          placeholder="Recipe Description"
+        />
+        <input
+          id="time"
+          name="time"
+          class="form-recipe-input"
+          placeholder="Recipe Total Time"
+        />
+        <input
+          id="size"
+          name="size"
+          class="form-recipe-input"
+          placeholder="Recipe Serving Size"
+        />
+      </div>
+      <div id="ingredients" class="ingredients">
+        <h2>Enter Ingredients</h2>
+        <input
+          id="ing1"
+          name="ing1"
+          class="form-recipe-input"
+          placeholder="Ingredient #1"
+        />
+        <input
+          id="ing2"
+          name="ing2"
+          class="form-recipe-input"
+          placeholder="Ingredient #2"
+        />
+        <input
+          id="ing3"
+          name="ing3"
+          class="form-recipe-input"
+          placeholder="Ingredient #3"
+        />
+        <div class="add-item" onclick="addIngredient()">+</div>
+        <div class="delete-item" onclick="deleteIngredient()">-</div>
+      </div>
+      <div id="instructions" class="instructions">
+        <h2>Enter Instructions</h2>
+        <input
+          id="inst1"
+          name="inst1"
+          class="form-recipe-input"
+          placeholder="Instruction #1"
+        />
+        <input
+          id="inst2"
+          name="inst2"
+          class="form-recipe-input"
+          placeholder="Instruction #2"
+        />
+        <input
+          id="inst3"
+          name="inst2"
+          class="form-recipe-input"
+          placeholder="Instruction #3"
+        />
+        <div class="add-item" onclick="addInstruction()">+</div>
+        <div class="delete-item" onclick="deleteInstruction()">-</div>
+      </div>
+      <p class="button button-recipe-submit" onclick="createRecipe(event)">
+        Create Recipe
+      </p>
+    </form>
+  </div>
+</div>
