@@ -146,13 +146,16 @@
         .image-holder {
           width: 100%;
           min-height: 200px;
+          .button {
+            font-size: 16px;
+          }
         }
         .button-holder {
           width: 100%;
           position: relative;
           top: -80px;
           .button {
-            font-size: 14px;
+            font-size: 16px;
           }
         }
         .info {

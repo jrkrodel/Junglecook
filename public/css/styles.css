@@ -353,13 +353,14 @@ nav {
     margin-top: 150px; }
   .our-recipes .content .container {
     flex-direction: column;
-    margin-bottom: 150px; }
+    margin-bottom: 170px; }
     .our-recipes .content .container .image-holder {
       width: 100%;
       min-height: 200px; }
     .our-recipes .content .container .info {
       width: 100%;
-      margin-bottom: 50px; } }
+      margin-bottom: 50px;
+      padding: 20px; } }
 
 .your-recipes {
   min-height: 100vh;
@@ -476,12 +477,14 @@ nav {
     .your-recipes .content .container .image-holder {
       width: 100%;
       min-height: 200px; }
+      .your-recipes .content .container .image-holder .button {
+        font-size: 16px; }
     .your-recipes .content .container .button-holder {
       width: 100%;
       position: relative;
       top: -80px; }
       .your-recipes .content .container .button-holder .button {
-        font-size: 14px; }
+        font-size: 16px; }
     .your-recipes .content .container .info {
       width: 100%;
       padding: 20px;
