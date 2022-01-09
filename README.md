@@ -1,4 +1,4 @@
-# homework-eight
+# Junglecook
 
 Live Link: [Junglecook](https://jrk-junglecook.web.app)
 
